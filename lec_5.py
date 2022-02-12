@@ -66,3 +66,28 @@ my_rogue.fill_gas_tank(50)
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
 my_tesla.fill_gas_tank(50)
+
+
+class MyClass:
+    """A simple example class"""
+    i = 1.0 # This is a class variable
+    def __init__(self):
+        self.j = 2.0 # This is a instance variable
+    def f(): # This is a class method
+        print(f"{MyClass.i}")			
+    def g(self): # This is a instance variable 
+        print(f"{self.j}")
+        
+
+class MyClass:
+    "This is a test of a class"
+    def __init__(self):
+        pass
+
+print(MyClass.__doc__)
+
+def myfunction():
+    "This is a test of a function"
+    pass
+
+print(myfunction.__doc__)        
