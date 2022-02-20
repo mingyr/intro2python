@@ -24,3 +24,10 @@ def figure(dpi):
     
 figure(50), figure(100), figure(300), figure(600)
 
+import ruler
+import numpy as np
+import matplotlb.pyplot as plt
+
+fig,ax = plt.subplots()
+ruler = ruler.Ruler(fig)
+plt.show()
